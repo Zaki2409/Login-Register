@@ -9,7 +9,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.LOGINZAKI.app"
+        applicationId "com.LOGIN_REGITER.app"
         minSdk 24
         targetSdk 34
         versionCode 1

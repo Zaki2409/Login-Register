@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="@drawable/bb">
+    android:background="@drawable/bb"
+    tools:ignore="ExtraText">
 
     <TextView
         android:id="@+id/logo"
@@ -41,18 +42,20 @@
         android:paddingBottom="10dp"
         android:textColor="@color/colorWhite"
         android:textColorHint="@color/colorWhite"
+        app:helperText="required"
+        app:helperTextTextColor="@color/colorRed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
+        app:layout_constraintVertical_bias="0.324" />
 
     <EditText
         android:id="@+id/inputEmail"
         android:layout_width="364dp"
         android:layout_height="55dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/baseline_email"
         android:drawablePadding="10dp"
@@ -66,15 +69,37 @@
         android:textColor="@color/colorWhite"
         android:textColorHint="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="@+id/loginInputPassword"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/loginInputPassword"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
+    <EditText
+        android:id="@+id/inputphone"
+        android:layout_width="364dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Phone nuumber"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/loginInputPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/loginInputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+-
     <TextView
         android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="92dp"
         android:text="Forgot Password?"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
@@ -86,11 +111,11 @@
         android:id="@+id/btnlogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="132dp"
         android:background="@drawable/btn_bg"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="@+id/loginInputPassword"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/loginInputPassword"
         app:layout_constraintTop_toBottomOf="@+id/loginInputPassword" />
 
